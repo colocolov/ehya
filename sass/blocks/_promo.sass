@@ -1,11 +1,12 @@
 .promo
   margin: 0 auto
   max-width: 1280px
-  min-height: 700px
+  // height: 700px
   background-image: url(../images/promo-bg.jpg)
   // background-image: url(https://img4.goodfon.ru/original/1920x1080/3/92/vesna-vetki-decoration-verba-wood-easter-iaitsa-paskha-gif-1.jpg)
   background-repeat: no-repeat
   background-position: center
+  background-size: cover
   background-color: #E8EAE9
   border-radius: 8px
   overflow: hidden
@@ -37,6 +38,10 @@
     background: $text
     border: none
     color: $bgc
+    &:hover
+      transition: 0.5s all
+      color: $text
+      background-color: $bgc
   &__advantages
     display: flex
     align-items: center
@@ -49,7 +54,7 @@
       margin-right: 0
     &-icon
       position: relative
-      height: 17px
+      height: 18px
       margin-right: 17px
       &::before
         position: absolute

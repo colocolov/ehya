@@ -1,0 +1,167 @@
+@media ( max-width: 1200px )
+  .container
+    max-width: 960px
+  .promo
+    width: 95%
+
+@media ( max-width: 992px )
+  .container
+    max-width: 700px
+  .navbar
+    margin-top: 8px
+    &__list
+      margin-right: 22px
+    &__item
+      margin-right: 17px
+    &__link
+      &:hover
+        transition: none
+        color: $text
+  .promo
+    &__button
+      &:hover
+        transition: none
+        background: $text
+        color: $bgc
+
+@media ( max-width: 767px )
+  .container
+    width: 92.5%
+  .navbar
+    margin-bottom: 30px
+    &__top
+      padding: 18px 26px
+    &__menu
+      display: none
+      &-button
+        display: flex
+  .menu
+    &-button
+      display: flex
+      width: 22px
+      height: 18px
+      padding: 0
+      align-items: center
+      flex-direction: column
+      justify-content: space-between
+      border: none
+      background-color: $bgc
+      cursor: pointer
+      outline: none
+      &__line
+        width: 22px
+        height: 1px
+        background-color: $text
+        transition: 0.5s all
+      &_active
+        span
+          &:nth-child(1)
+            transform: rotate(-45deg)
+            margin-top: 5px
+          &:nth-child(2)
+            display: none
+          &:nth-child(3)
+            transform: rotate(45deg)
+            margin-bottom: 5px
+  .promo
+    width: 94.7%
+    // height: 624px
+    background-image: url(../images/promo-bg-768.jpg)
+    &__wrapper
+      padding-left: 0
+      padding-top: 36px
+    &__hash
+      margin-bottom: 24px
+    &__heading
+      max-width: 365px
+      font-size: 48px
+      line-height: 60px
+      margin-bottom: 20px
+    &__text
+      max-width: 400px
+      font-size: 18px
+      line-height: 32px
+      margin-bottom: 36px
+    &__button
+      margin-bottom: 50px
+    &__advant
+      margin-right: 35px
+
+@media ( max-width: 576px )
+  .promo
+    &__advantages
+      justify-content: start
+      flex-wrap: wrap
+      padding-left: 0
+      width: 274px
+    &__advant
+      margin-bottom: 20px
+      margin-right: 18px
+      &:nth-child(2)
+        margin-right: 0
+      &-icon
+        width: 11px
+        margin-right: 15px
+        &::before
+          width: 24px
+          height: 24px
+          border-radius: 8px
+      &-text
+        letter-spacing: 1px
+
+@media ( max-width: 480px )
+  .container
+    width: 90%
+  .navbar
+    &__top
+      padding: 10px 8px
+  .promo
+    width: 100%
+    min-height: 899px
+    background-image: url(../images/promo-bg-480.jpg)
+    background-position: top center
+    border-radius: 0
+    &__wrapper
+      padding-top: 379px
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__hash
+      width: 194px
+      height: 24px
+      margin-bottom: 25px
+      text-align: center
+      &::after
+        width: 194px
+        height: 24px
+    &__heading
+      margin-bottom: 20px
+      font-size: 32px
+      line-height: 40px
+      text-align: center
+      letter-spacing: 1px
+    &__text
+      margin-bottom: 23px
+      max-width: 280px
+      line-height: 28px
+      text-align: center
+      letter-spacing: -1px
+    &__button
+      margin-bottom: 26px
+      font-size: 16px
+      line-height: 22px
+      height: 47px
+      padding: 13px 40px
+    &__advantages
+      justify-content: center
+    &__advant
+      margin-right: 18px
+      &-icon
+        width: 11px
+        margin-right: 15px
+        &::before
+          width: 24px
+          height: 24px
+          border-radius: 8px
+      &-text
+        letter-spacing: 1px

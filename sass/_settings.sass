@@ -2,10 +2,11 @@
   box-sizing: border-box
 body
   font-family: 'Open Sans', sans-serif
+  font-weight: 400
   background-color: $bgc
   color: $text
 .container
-  max-width: 1110px
+  max-width: 1140px
   margin: auto
 .link
   text-decoration: none
@@ -13,25 +14,40 @@ body
 .button
   font-size: 16px
   font-weight: 700
-  border-radius: 5px
-  border: 2px solid transparent
+  border-radius: 8px
+  // border: 2px solid transparent
   outline: none
   cursor: pointer
 .hash
   position: relative
   padding: 6px 16px
   font-size: 14px
-  line-height: 31px
-  font-weight: 400
-  color: #36B37E
+  line-height: 20px
+  font-weight: 600
+  color: $hash
   text-transform: uppercase
-  &:after
+  &::after
     position: absolute
     content: ''
-    min-height: 30px
+    min-height: 32px
     width: 100%
     top: 0
     left: 0
-    background-color: #36B37E
-    border-radius: 50px
-    opacity: 0.2
+    background-color: $hash
+    border-radius: 2000px
+    opacity: 0.1
+.heading
+  margin-top: 0
+  margin-bottom: 0
+  font-family: 'HK Grotesk', sans-serif
+  font-style: normal
+  font-weight: 700
+  font-size: 56px
+  line-height: 68px
+  color: $text
+.text
+  margin-top: 0
+  margin-bottom: 0
+  font-size: 20px
+  line-height: 36px
+  color: $description

@@ -1,27 +1,40 @@
 .header
   // background-color: #fff
-  margin-bottom: 45px
+  margin-bottom: 36px
   &__top
-    border: 1px solid #000
     display: flex
     justify-content: space-between
     align-items: center
+    padding-top: 26px
+    padding-bottom: 26px
   &__menu
     display: flex
     justify-content: space-between
     align-items: center
   &__list
     list-style: none
-    margin-right: 15px
+    margin: 0 50px 0 0
   &__item
     display: inline
-    margin-right: 15px
+    margin-right: 37px
     &:last-child
       margin-right: 0
   &__link
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
     color: $text
+    &:hover
+      transition: 0.2s all
+      color: $blue
   &__login
+    padding: 11px 22px
+    min-height: 48px
+    color: $blue
     background-color: #fff
-    border: 2px solid #0820f5
-    color: #0820f5
-    padding: 10px 25px
+    border: 2px solid $blue
+    font-size: 16px
+    line-height: 22px
+    filter: drop-shadow(0px 10px 25px rgba(21, 37, 72, 0.1))
+.logo
+  max-height: 28px

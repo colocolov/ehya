@@ -6,7 +6,7 @@
     <title>Ehya - интерент-магазин брендовой одежды</title>
     <link rel="stylesheet" href="css/style.css" />
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/>
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png" />
     <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png" />
     <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png" />
@@ -19,17 +19,17 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-    <meta name="theme-color" content="#ffffff" />
+    <link rel="manifest" href="images/favicon/manifest.json" />
+    <!-- <meta name="msapplication-TileColor" content="#ffffff" /> -->
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png" />
+    <!-- <meta name="theme-color" content="#ffffff" /> -->
   </head>
   <body>
     <header class="navbar navbar__mobile_fixed">
       <div class="container">
         <div class="navbar__top">
           <a href="index.html" class="logo">
-            <img src="images/logo.svg" alt="Logo:" class="navbar__logo" />
+            <img src="images/logo.svg" alt="Logo: Ehya" class="navbar__logo" />
           </a>
           <!-- /.logo -->
           <nav class="navbar__menu">
@@ -93,8 +93,31 @@
 
     <section class="collection">
       <div class="container">
-        <div class="collection__photo">aaa</div>
-        <!-- /.collection__photo -->
+        <div class="collection__wrapper">
+          <div class="collection__photo-big">
+            <img src="images/collection-1.jpg" alt="Photo: зимняя коллекция" class="collection__photo" />
+          </div>
+          <!-- /.collection__photo-big -->
+          <div class="collection__photo-twice">
+            <div class="collection__photo-small">
+              <img src="images/collection-2.jpg" alt="Photo: зимняя коллекция" class="collection__photo" />
+            </div>
+            <div class="collection__photo-small">
+              <img src="images/collection-3.jpg" alt="Photo: зимняя коллекция" class="collection__photo" />
+            </div>
+          </div>
+          <!-- /.collection__photo-twice -->
+          <div class="collection__description">
+            <h2 class="heading collection__heading">Новая зимняя коллекция</h2>
+            <p class="text collection__text">
+              Сейчас зимний сезон. Вы можете увидеть больше из этой коллекции, нажав кнопку ниже. Успейте купить, пока
+              коллекция есть в наличии. Используйте код EHYA20, чтобы получить 20% скидку.
+            </p>
+            <a href="#" class="link collection__link">Посмотреть коллекцию</a>
+          </div>
+          <!-- /.collection__description -->
+        </div>
+        <!-- /.collection__wrapper -->
       </div>
     </section>
     <!-- /.collection -->

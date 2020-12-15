@@ -22,14 +22,17 @@
       font-weight: bold
       color: $text
   &__photos
-    display: flex
+    display: grid
+    grid-template-columns: repeat(4, 260px)
+    row-gap: 50px
+    // display: flex
     justify-content: space-between
-    align-items: start
-    flex-wrap: wrap
-  &__good
-    margin-bottom: 50px
-    &:nth-last-child(-n + 4)
-      margin-bottom: 0
+    // align-items: start
+    // flex-wrap: wrap
+  // &__good
+  //   margin-bottom: 50px
+  //   &:nth-last-child(-n + 4)
+  //     margin-bottom: 0
   &__image
     margin-bottom: 20px
     width: 260px

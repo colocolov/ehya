@@ -14,6 +14,15 @@
     &__heading
       font-size: 40px
       line-height: 56px
+  .trends
+    &__wrapper
+      padding-left: 32px
+      padding-right: 32px
+    &__photos
+      grid-template-columns: repeat(3, 280px)
+    &__image
+      width: 280px
+      height: 350px
 
 @media ( max-width: 992px )
   .container
@@ -38,6 +47,7 @@
     &__wrapper
       flex-wrap: wrap
       justify-content: space-between
+      margin-bottom: 80px
     &__photo
       &-big
         width: 322px
@@ -50,6 +60,14 @@
     &__heading
       font-size: 48px
       line-height: 60px
+  .trends
+    &__header
+      flex-direction: column
+      margin-bottom: 55px
+    &__heading
+      margin-bottom: 28px
+    &__photos
+      grid-template-columns: repeat(2, 280px)
 
 @media ( max-width: 767px )
   .container
@@ -180,6 +198,51 @@
       font-size: 18px
       line-height: 1.7
       margin-bottom: 14px
+  .trends
+    &__photos
+      grid-template-columns: repeat(2, 250px)
+      row-gap: 40px
+    &__image
+      width: 250px
+      height: 315px
+    &__more
+      height: 315px
+
+@media ( max-width: 640px )
+  .trends
+    &__wrapper
+      padding-left: 0px
+      padding-right: 0px
+    &__header
+      margin-bottom: 40px
+    &__heading
+      font-size: 48px
+      line-height: 60px
+    &__photos
+      grid-template-columns: repeat(2, 230px)
+      row-gap: 25px
+    &__image
+      width: 230px
+      height: 300px
+      margin-bottom: 15px
+    &__info
+      padding: 0
+    &__name
+      font-size: 18px
+      margin-bottom: 0px
+      line-height: 26px
+    &__price
+      font-size: 16px
+      line-height: 26px
+    &__icon
+      width: 18px
+      &_big
+        width: 25px
+    &__more
+      height: 300px
+    &__text
+      font-size: 18px
+      line-height: 22px
 
 @media ( max-width: 576px )
   .promo
@@ -205,6 +268,15 @@
   .collection
     &__link
       display: none
+  .trends
+    &__photos
+      grid-template-columns: repeat(2, 200px)
+      row-gap: 20px
+    &__image
+      width: 200px
+      height: 250px
+    &__more
+      height: 250px
 
 @media ( max-width: 480px )
   .container
@@ -277,3 +349,40 @@
       text-align: center
       font-size: 16px
       line-height: 28px
+  .trends
+    &__header
+      margin-bottom: 36px
+    &__heading
+      margin-bottom: 24px
+      font-size: 28px
+      line-height: 36px
+    &__type
+      font-size: 16px
+      line-height: 22px
+    &__photos
+      grid-template-columns: repeat(2, minmax(140px, 190px))
+    &__image
+      max-width: 140px
+      // height: 234px
+    // &__info
+    //   padding: 0
+    &__data
+      justify-content: start
+    &__name
+      margin-bottom: 3px
+      font-size: 16px
+      line-height: 20px
+    &__price
+      font-size: 14px
+      line-height: 24px
+      margin-right: 9px
+    &__icon
+      width: 14px
+      &_big
+        width: 25px
+        margin-bottom: 15px
+    &__more
+      height: 250px
+    &__text
+      font-size: 17px
+      line-height: 20px

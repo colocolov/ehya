@@ -8,7 +8,7 @@
   .container
     max-width: 700px
   .navbar
-    margin-top: 8px
+    padding-top: 8px
     &__list
       margin-right: 22px
     &__item
@@ -27,14 +27,52 @@
 @media ( max-width: 767px )
   .container
     width: 92.5%
+  body
+    padding-top: 86px
+  .body
+    &_fix
+      overflow-y: hidden
   .navbar
     margin-bottom: 30px
     &__top
       padding: 18px 26px
     &__menu
       display: none
+      background-color: $bgc
+      position: fixed
+      // left: 8px
+      right: 8px
+      width: 304px
+      // bottom: 0
+      top: 10px
+      padding-top: 10px
+      &_visible
+        display: flex
+        flex-direction: column
+        align-items: start
+        overflow: scroll
+        padding: 36px 24px
       &-button
         display: flex
+    &__mobile
+      &_fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+    &__list
+      display: flex
+      flex-direction: column
+      // align-items: center
+      margin-right: 0
+    &__item
+      margin-right: 0
+      margin-bottom: 20px
+    &__login
+      width: 100%
+      height: 40px
+      padding: 7px 22px
   .menu
     &-button
       display: flex
@@ -57,12 +95,12 @@
         span
           &:nth-child(1)
             transform: rotate(-45deg)
-            margin-top: 5px
+            margin-top: 8px
           &:nth-child(2)
             display: none
           &:nth-child(3)
             transform: rotate(45deg)
-            margin-bottom: 5px
+            margin-bottom: 8px
   .promo
     width: 94.7%
     // height: 624px

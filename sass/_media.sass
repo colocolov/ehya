@@ -3,6 +3,17 @@
     max-width: 960px
   .promo
     width: 95%
+  .collection
+    &__photo
+      &-big
+        margin-right: 20px
+      &-twice
+        margin-right: 20px
+    &__description
+      width: 280px
+    &__heading
+      font-size: 40px
+      line-height: 56px
 
 @media ( max-width: 992px )
   .container
@@ -23,6 +34,22 @@
         transition: none
         background: $text
         color: $bgc
+  .collection
+    &__wrapper
+      flex-wrap: wrap
+      justify-content: space-between
+    &__photo
+      &-big
+        width: 322px
+        margin-right: 30px
+        margin-bottom: 40px
+      &-twice
+        margin-right: 0px
+    &__description
+      width: 100%
+    &__heading
+      font-size: 48px
+      line-height: 60px
 
 @media ( max-width: 767px )
   .container
@@ -105,6 +132,7 @@
     width: 94.7%
     // height: 624px
     background-image: url(../images/promo-bg-768.jpg)
+    margin-bottom: 80px
     &__wrapper
       padding-left: 0
       padding-top: 36px
@@ -124,6 +152,34 @@
       margin-bottom: 50px
     &__advant
       margin-right: 35px
+  .collection
+    &__photo
+      &-big
+        width: 100%
+        max-height: 300px
+        margin-right: 0
+        margin-bottom: 14px
+      &-twice
+        flex-direction: row
+        width: 100%
+        max-height: 230px
+        margin-right: 0px
+        margin-bottom: 36px
+      &-small
+        width: 50%
+        margin-right: 14px
+        &:last-child
+          margin-right: 0
+    &__description
+      width: 100%
+    &__heading
+      font-size: 40px
+      line-height: 52px
+      margin-bottom: 14px
+    &__text
+      font-size: 18px
+      line-height: 1.7
+      margin-bottom: 14px
 
 @media ( max-width: 576px )
   .promo
@@ -146,6 +202,9 @@
           border-radius: 8px
       &-text
         letter-spacing: 1px
+  .collection
+    &__link
+      display: none
 
 @media ( max-width: 480px )
   .container
@@ -203,3 +262,18 @@
           border-radius: 8px
       &-text
         letter-spacing: 1px
+  .collection
+    &__photo
+      &-twice
+        height: 97px
+      &-small
+        height: 97px
+    &__heading
+      text-align: center
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 20px
+    &__text
+      text-align: center
+      font-size: 16px
+      line-height: 28px

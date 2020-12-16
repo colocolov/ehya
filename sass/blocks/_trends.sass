@@ -23,8 +23,10 @@
     &:first-child
       margin-left: 0
     &_active
-      font-weight: bold
+      font-weight: 600
       color: $text
+    &:hover
+      font-weight: 600
     button
   &__photos
     display: grid
@@ -53,6 +55,12 @@
     &_more
       background-color: $blue
       margin-bottom: 0
+      &:hover
+        transition: 0.5s all
+        opacity: 0.8
+    &_link
+      text-decoration: none
+      color: $blue
   &__info
     padding: 0 10px
   &__name
@@ -60,6 +68,11 @@
     font-size: 24px
     line-height: 32px
     letter-spacing: 0.2px
+    a
+      text-decoration: none
+      color: inherit
+      &:hover
+        color: $blue
   &__data
     display: flex
     justify-content: space-between

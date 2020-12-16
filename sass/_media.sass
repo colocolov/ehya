@@ -1,3 +1,4 @@
+// ---------------------------------- 1200 и меньше
 @media ( max-width: 1200px )
   .container
     max-width: 960px
@@ -26,7 +27,7 @@
     &__image
       width: 280px
       height: 350px
-
+// ---------------------------------- 992 и меньше
 @media ( max-width: 992px )
   .container
     max-width: 700px
@@ -96,6 +97,11 @@
       a
         &:hover
           color: $text
+  .reviews
+    &-slider
+      width: 700px
+
+// ---------------------------------- 768 и меньше
 @media ( max-width: 768px )
   .container
     width: 92.5%
@@ -224,6 +230,8 @@
     &__text
       margin-bottom: 25px
   .trends
+    &__wrapper
+      margin-bottom: 93px
     &__type
       margin-left: 26px
     &__photos
@@ -241,7 +249,19 @@
     &__icon
       &_big
         margin-bottom: 30px
+  .reviews
+    &-slider
+      width: 92.5%
+      &__icon
+        margin-bottom: 39px
+      &__text
+        padding-left: 9px
+        padding-right: 9px
+  .swiper
+    &-wrapper
+      margin-bottom: 46px
 
+// ---------------------------------- 640 и меньше
 @media ( max-width: 640px )
   .collection
     &__photo
@@ -306,7 +326,13 @@
     &__text
       font-size: 18px
       line-height: 22px
+  .reviews
+    &-slider
+      &__text
+        padding-left: 0px
+        padding-right: 0px
 
+  // ---------------------------------- 576 и меньше
 @media ( max-width: 576px )
   .promo
     margin-bottom: 64px
@@ -331,8 +357,6 @@
       &-text
         letter-spacing: 1px
   .collection
-    &__wrapper
-
     &__link
       display: none
   .trends
@@ -346,6 +370,7 @@
     &__more
       height: 300px
 
+  // ---------------------------------- 480 и меньше
 @media ( max-width: 480px )
   body
     padding-top: 86px
@@ -429,6 +454,8 @@
       font-size: 16px
       line-height: 28px
   .trends
+    &__wrapper
+      margin-bottom: 61px
     &__header
       margin-bottom: 35px
     &__heading
@@ -467,3 +494,23 @@
     &__text
       font-size: 17px
       line-height: 20px
+  .reviews
+    &-slider
+      &__icon
+        width: 70px
+        margin-bottom: 22px
+      &__text
+        margin-bottom: 24px
+        padding-left: 0px
+        padding-right: 0px
+        font-size: 18px
+        line-height: 36px
+        letter-spacing: 0.12px
+      &__username
+        width: 67%
+        font-size: 20px
+        line-height: 24px
+        letter-spacing: 0.2px
+  .swiper
+    &-wrapper
+      margin-bottom: 42px

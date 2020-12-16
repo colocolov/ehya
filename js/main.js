@@ -16,13 +16,17 @@ let articles = document.querySelectorAll(".trends__good");
 // console.log(type);
 
 function doAction(value) {
-  // let type = document.querySelector(".trends__type").classList.toggle("trends__type_active");
-  // console.log(value);
-  // console.log(this.value);
+  let types = document.querySelectorAll(".trends__type");
+  for (let type of types) {
+    if (value == type.value) {
+      type.classList.add("trends__type_active");
+    } else {
+      type.classList.remove("trends__type_active");
+    }
+  }
   for (let article of articles) {
     if (article.dataset.category !== value) {
       article.classList.add("trends__hide");
-      // type.classList.add("trends__type_active");
     } else {
       article.classList.remove("trends__hide");
     }

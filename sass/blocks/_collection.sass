@@ -24,16 +24,18 @@
       height: 230px
   &__description
     width: 412px
+    padding-top: 10px
   &__heading
     font-size: 48px
     line-height: 60px
     letter-spacing: 0.2px
     margin-bottom: 24px
   &__text
+    margin-bottom: 41px
+    padding-right: 10px
     font-size: 20px
     line-height: 36px
     color: #5A7184
-    margin-bottom: 32px
   &__link
     position: relative
     font-weight: 700
@@ -44,10 +46,16 @@
     &::after
       content: ''
       position: absolute
-      margin-left: 32px
+      margin-left: 20px
       top: 4px
       width: 13px
       height: 16px
       background-image: url(../images/icons/arrow-right.svg)
       background-repeat: no-repeat
       background-position: center
+      cursor: default
+    &:hover
+      // color: $text
+      &::after
+        transition: 0.5s all
+        margin-left: 30px

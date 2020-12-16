@@ -35,10 +35,14 @@
     padding: 11px 22px
     min-height: 40px
     color: $blue
-    background-color: #fff
+    background-color: $bgc
     border: 2px solid $blue
     font-size: 16px
     line-height: 22px
     filter: drop-shadow(0px 10px 25px rgba(21, 37, 72, 0.1))
+    &:hover
+      transition: 0.5s all
+      background-color: $blue
+      color: $bgc
 .logo
   height: 28px

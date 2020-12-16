@@ -37,6 +37,11 @@
       &:hover
         transition: none
         color: $text
+    &__login
+      &:hover
+        transition: none
+        background-color: $bgc
+        color: $blue
   .promo
     &__button
       &:hover
@@ -56,10 +61,16 @@
       &-twice
         margin-right: 0px
     &__description
+      padding-top: 0
       width: 100%
     &__heading
       font-size: 48px
       line-height: 60px
+    &__link
+      &:hover
+        &::after
+          transition: none
+          margin-left: 0px
   .trends
     &__header
       flex-direction: column
@@ -69,11 +80,11 @@
     &__photos
       grid-template-columns: repeat(2, 280px)
 
-@media ( max-width: 767px )
+@media ( max-width: 768px )
   .container
     width: 92.5%
   body
-    padding-top: 86px
+    padding-top: 102px
   .body
     &_fix
       overflow-y: hidden
@@ -154,6 +165,7 @@
     &__wrapper
       padding-left: 0
       padding-top: 36px
+      padding-bottom: 43px
     &__hash
       margin-bottom: 24px
     &__heading
@@ -169,7 +181,43 @@
     &__button
       margin-bottom: 50px
     &__advant
-      margin-right: 35px
+      margin-right: 31px
+  .collection
+    &__wrapper
+      flex-wrap: wrap
+      justify-content: space-between
+      margin-bottom: 80px
+      padding-left: 15px
+      padding-right: 15px
+    &__photo
+      &-big
+        width: 47%
+        margin-right: 30px
+        margin-bottom: 40px
+      &-twice
+        width: 47%
+        margin-right: 0px
+      &-small
+        width: 100%
+    &__description
+      padding-top: 0
+      width: 100%
+    &__heading
+      font-size: 48px
+      line-height: 60px
+    &__text
+      margin-bottom: 25px
+  .trends
+    &__photos
+      grid-template-columns: repeat(2, 250px)
+      row-gap: 40px
+    &__image
+      width: 250px
+      height: 315px
+    &__more
+      height: 315px
+
+@media ( max-width: 640px )
   .collection
     &__photo
       &-big
@@ -198,17 +246,6 @@
       font-size: 18px
       line-height: 1.7
       margin-bottom: 14px
-  .trends
-    &__photos
-      grid-template-columns: repeat(2, 250px)
-      row-gap: 40px
-    &__image
-      width: 250px
-      height: 315px
-    &__more
-      height: 315px
-
-@media ( max-width: 640px )
   .trends
     &__wrapper
       padding-left: 0px
@@ -246,26 +283,31 @@
 
 @media ( max-width: 576px )
   .promo
+    margin-bottom: 64px
+    &__wrapper
+      padding-bottom: 17px
     &__advantages
       justify-content: start
       flex-wrap: wrap
       padding-left: 0
-      width: 274px
+      // width: 274px
+      width: 100%
     &__advant
       margin-bottom: 20px
       margin-right: 18px
-      &:nth-child(2)
-        margin-right: 0
       &-icon
         width: 11px
         margin-right: 15px
-        &::before
+        &::after
           width: 24px
           height: 24px
           border-radius: 8px
       &-text
         letter-spacing: 1px
   .collection
+    &__wrapper
+      padding-right: 0
+      padding-left: 0
     &__link
       display: none
   .trends
@@ -279,6 +321,8 @@
       height: 250px
 
 @media ( max-width: 480px )
+  body
+    padding-top: 86px
   .container
     width: 90%
   .navbar
@@ -304,13 +348,13 @@
         width: 194px
         height: 24px
     &__heading
-      margin-bottom: 20px
+      margin-bottom: 18px
       font-size: 32px
       line-height: 40px
       text-align: center
       letter-spacing: 1px
     &__text
-      margin-bottom: 23px
+      margin-bottom: 25px
       max-width: 280px
       line-height: 28px
       text-align: center
@@ -320,20 +364,24 @@
       font-size: 16px
       line-height: 22px
       height: 47px
-      padding: 13px 40px
+      padding: 11px 40px
     &__advantages
       justify-content: center
+      width: 274px
     &__advant
-      margin-right: 18px
+      margin-right: 25px
+      &:nth-child(2)
+        margin-right: 0
       &-icon
         width: 11px
-        margin-right: 15px
-        &::before
+        margin-right: 11px
+        &::after
           width: 24px
           height: 24px
           border-radius: 8px
       &-text
-        letter-spacing: 1px
+        letter-spacing: 0.1px
+        margin-left: 3px
   .collection
     &__photo
       &-twice

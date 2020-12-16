@@ -12,15 +12,20 @@
     letter-spacing: 0.2px
   &__tabs
   &__type
-    margin-left: 36px
+    margin-left: 21px
     font-size: 18px
     line-height: 25px
     color: $description
+    background-color: #fff
+    border: none
+    outline: none
+    cursor: pointer
     &:first-child
       margin-left: 0
     &_active
       font-weight: bold
       color: $text
+    button
   &__photos
     display: grid
     grid-template-columns: repeat(4, 260px)
@@ -33,6 +38,8 @@
   //   margin-bottom: 50px
   //   &:nth-last-child(-n + 4)
   //     margin-bottom: 0
+  &__hide
+    display: none
   &__image
     margin-bottom: 20px
     width: 260px

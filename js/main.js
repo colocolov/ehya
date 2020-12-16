@@ -39,11 +39,13 @@ var mySwiper = new Swiper(".reviews-slider", {
   loop: true,
   // autoplay
   // autoplay: {
-  //   // delay: 2000,
+  //   delay: 7000,
   // },
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
     type: "bullets",
+    clickable: true,
   },
 });
+//-----

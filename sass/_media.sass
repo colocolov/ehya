@@ -27,6 +27,19 @@
     &__image
       width: 280px
       height: 350px
+  .stories
+    &__wrapper
+      flex-direction: column
+      align-items: center
+    &__info
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-bottom: 36px
+    &__heading
+      text-align: center
+    &__text
+      text-align: center
 // ---------------------------------- 992 и меньше
 @media ( max-width: 992px )
   .container
@@ -100,6 +113,11 @@
   .reviews
     &-slider
       width: 700px
+  .stories
+    &__link
+      &:hover
+        &::after
+          display: none
 
 // ---------------------------------- 768 и меньше
 @media ( max-width: 768px )
@@ -260,7 +278,39 @@
   .swiper
     &-wrapper
       margin-bottom: 46px
+  .stories
+    &__wrapper
+      padding-top: 80px
+    &__hash
+      margin-bottom: 24px
+    &__info
+      margin-bottom: 26px
+    &__heading
+      margin-bottom: 17px
+    &__text
+      max-width: 568px
+      margin-bottom: 35px
+    &__slider
+      width: 682px
+    &__post
+      width: 332px
+    &__image
+      width: 322px
+    &__descrition
+      width: 322px
+      padding: 20px 39px 20px 20px
 
+// ---------------------------------- 640 и меньше
+@media ( max-width: 740px )
+  .stories
+    &__slider
+      width: 332px
+    &__articles
+      flex-direction: column
+      align-items: center
+    &__post
+      margin-right: 0
+      margin-bottom: 24px
 // ---------------------------------- 640 и меньше
 @media ( max-width: 640px )
   .collection
@@ -495,6 +545,7 @@
       font-size: 17px
       line-height: 20px
   .reviews
+    margin-bottom: 53px
     &-slider
       &__icon
         width: 70px
@@ -514,3 +565,39 @@
   .swiper
     &-wrapper
       margin-bottom: 42px
+  .stories
+    &__wrapper
+      padding-top: 43px
+    &__slider
+      width: 280px
+    &__info
+      margin-bottom: 16px
+    &__hash
+      margin-bottom: 20px
+    &__heading
+      font-size: 28px
+      line-height: 36px
+    &__text
+      font-size: 16px
+      line-height: 28px
+    &__post
+      width: 280px
+      height: 407px
+      margin-bottom: 24px
+    &__image
+      width: 270px
+      height: 277px
+    &__descrition
+      top: 257px
+      padding: 20px 10px 20px 20px
+      width: 270px
+      height: 150px
+    &__title
+      margin-bottom: 16px
+      font-size: 20px
+      line-height: 24px
+    &__buttons
+      width: 112px
+    &-btn__left, &-btn__right
+      width: 48px
+      height: 48px

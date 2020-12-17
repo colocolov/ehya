@@ -38,9 +38,9 @@ function doAction(value) {
 var reviewsSlider = new Swiper(".reviews-slider", {
   loop: true,
   // autoplay
-  autoplay: {
-    delay: 7000,
-  },
+  // autoplay: {
+  //   delay: 7000,
+  // },
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",

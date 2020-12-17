@@ -47,5 +47,17 @@ var mySwiper = new Swiper(".reviews-slider", {
     type: "bullets",
     clickable: true,
   },
+
+  on: {
+    init() {
+      this.el.addEventListener("mouseenter", () => {
+        this.autoplay.stop();
+      });
+
+      this.el.addEventListener("mouseleave", () => {
+        this.autoplay.start();
+      });
+    },
+  },
 });
 //-----

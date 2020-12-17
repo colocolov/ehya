@@ -467,16 +467,19 @@
           </div>
 
           <!-- /.subscribe__text -->
-          <div class="subscribe__form">
-            <input type="text" class="subscribe__input" placeholder="Ваш Emaill" />
-            <button class="button subscribe__button">Подписаться</button>
-          </div>
+          <form action="send.php" method="POST" class="form">
+            <div class="subscribe__form">
+              <input type="email" name="email" class="form subscribe__input" placeholder="Ваш Email" required />
+              <button class="button subscribe__button">Подписаться</button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
     <!-- /.subscribe -->
 
-    <!-- <script src="js/jquery-3.5.1.min.js"></script> -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>

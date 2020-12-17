@@ -27,19 +27,21 @@
   &__form
     position: relative
     margin-right: 63px
+    display: flex
+    flex-direction: column
   &__input
     width: 447px
     height: 56px
     background: #FFFFFF
+    color: $text
     border: 1px solid #C3CAD9
     border-radius: 8px
-    padding-right: 180px
+    padding-right: 190px
     padding-left: 48px
     background-image: url(../images/icons/letter.svg)
     background-repeat: no-repeat
     background-position: 20px center
-    &::before
-      content: ''
+    outline: none
     &::placeholder
       font-weight: 600
       font-size: 16px
@@ -58,3 +60,4 @@
     line-height: 25px
     text-align: center
     color: #FFFFFF
+    cursor: pointer

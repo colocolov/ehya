@@ -92,3 +92,23 @@ $(document).ready(function () {
   });
 });
 //-----
+
+// для валидации
+// $(".form").each(function () {
+$(".form").validate({
+  errorClass: "invalid",
+  rules: {
+    email: {
+      required: true,
+      email: true,
+    },
+  },
+  messages: {
+    email: {
+      email: "Введите корректный email адрес",
+      required: "Пожалуйста введите email в виде name@mail.com",
+    },
+  },
+});
+// });
+//-----

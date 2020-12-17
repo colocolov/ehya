@@ -35,7 +35,7 @@ function doAction(value) {
 //-----
 
 // слайдер для отзывов
-var mySwiper = new Swiper(".reviews-slider", {
+var reviewsSlider = new Swiper(".reviews-slider", {
   loop: true,
   // autoplay
   autoplay: {
@@ -59,5 +59,27 @@ var mySwiper = new Swiper(".reviews-slider", {
       });
     },
   },
+});
+//-----
+
+// слайдер для записей
+var storiesSlider = new Swiper(".stories__slider", {
+  loop: false,
+  navigation: {
+    nextEl: ".stories-btn__left",
+    prevEl: ".stories-btn__right",
+    disabledClass: "stories-btn__unactive",
+  },
+});
+
+$(document).ready(function () {
+  $(".stories-btn__left").click(function () {
+    $(".stories-btn__left").addClass("stories-btn__left--active");
+    $(".stories-btn__right").removeClass("stories-btn__right--active");
+  });
+  $(".stories-btn__right").click(function () {
+    $(".stories-btn__right").addClass("stories-btn__right--active");
+    $(".stories-btn__left").removeClass("stories-btn__left--active");
+  });
 });
 //-----

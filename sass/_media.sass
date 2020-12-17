@@ -311,6 +311,8 @@
     &__post
       margin-right: 0
       margin-bottom: 24px
+  .subscribe
+    display: none
 // ---------------------------------- 640 и меньше
 @media ( max-width: 640px )
   .collection
@@ -406,9 +408,6 @@
           border-radius: 8px
       &-text
         letter-spacing: 1px
-  .collection
-    &__link
-      display: none
   .trends
     &__photos
       grid-template-columns: repeat(2, minmax(200px, 250px))
@@ -503,6 +502,12 @@
       text-align: center
       font-size: 16px
       line-height: 28px
+    &__link
+      display: block
+      font-size: 16px
+      text-align: center
+      &::after
+        margin-left: 15px
   .trends
     &__wrapper
       margin-bottom: 61px

@@ -25,8 +25,17 @@ function doAction(value) {
     }
   }
   for (let article of articles) {
-    if (article.dataset.category !== value) {
-      article.classList.add("trends__hide");
+    if (value !== "all") {
+      console.log(value);
+      // console.log(article.dataset.category);
+
+      //цикл if
+      if (article.dataset.category !== value && article.dataset.category !== "more") {
+        article.classList.add("trends__hide");
+      } else {
+        article.classList.remove("trends__hide");
+      }
+      //цикл if
     } else {
       article.classList.remove("trends__hide");
     }

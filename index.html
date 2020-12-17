@@ -130,7 +130,9 @@
           <div class="trends__header">
             <h2 lang="en" class="heading trends__heading">Тренды</h2>
             <div class="trends__tabs">
-              <button class="trends__type" value="new" onclick="doAction(this.value)">Новинки</button>
+              <button class="trends__type trends__type_active" value="all" onclick="doAction(this.value)">
+                Новинки
+              </button>
               <button class="trends__type" value="best" onclick="doAction(this.value)">Лучшее</button>
               <button class="trends__type" value="soon" onclick="doAction(this.value)">Скоро</button>
             </div>
@@ -242,7 +244,7 @@
               </div>
             </div>
             <!-- /.trends__good -->
-            <div class="trends__good">
+            <div class="trends__good" data-category="more">
               <div class="trends__image trends__image_more">
                 <a href="#" class="trends__image_link"
                   ><div class="trends__more">
@@ -453,6 +455,26 @@
       </div>
     </section>
     <!-- /.stories -->
+
+    <section class="subscribe subscribe_mod">
+      <div class="container">
+        <div class="subscribe__wrapper">
+          <div class="subscribe__info">
+            <h3 lang="en" class="heading subscribe__heading">Подпишитесь</h3>
+            <p class="text subscribe__text">
+              Напишите свой адрес электронной почты. Мы&nbsp;будем присылать вам новости из мира моды.
+            </p>
+          </div>
+
+          <!-- /.subscribe__text -->
+          <div class="subscribe__form">
+            <input type="text" class="subscribe__input" placeholder="Ваш Emaill" />
+            <button class="button subscribe__button">Подписаться</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.subscribe -->
 
     <!-- <script src="js/jquery-3.5.1.min.js"></script> -->
     <script src="js/swiper-bundle.min.js"></script>

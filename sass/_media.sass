@@ -127,8 +127,14 @@
       flex-direction: column
     &__info
       margin-bottom: 56px
-    &__heading, &__text
+      &_thx
+        margin-bottom: 0
+    &__heading
       text-align: center
+    &__text
+      &_thx
+        &:hover
+          transition: none
   .footer
     &__nav
       flex-wrap: wrap

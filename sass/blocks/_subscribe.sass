@@ -10,8 +10,14 @@
     justify-content: space-between
     align-items: center
     padding: 100px 0
+    &_thx
+      justify-content: center
   &__info
     width: 436px
+    &_thx
+      width: 90%
+      margin-bottom: 0px
+      text-align: center
   &__heading
     margin-bottom: 14px
     font-family: 'HK Grotesk', sans-serif
@@ -24,6 +30,12 @@
     font-size: 18px
     line-height: 32px
     color: $bgc
+    &_thx
+      color: $bgc
+      font-size: 24px
+      &:hover
+        transition: 0.5s all
+        text-decoration: none
   &__form
     position: relative
     margin-right: 63px

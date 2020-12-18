@@ -1,0 +1,100 @@
+.modal
+  &__overlay
+    position: fixed
+    left: 0px
+    top: 0px
+    right: 0
+    bottom: 0
+    z-index: 100
+    background: rgba(21, 101, 216, 0.25)
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    &_visible
+      visibility: visible
+      opacity: 1
+  &__dialog
+    position: fixed
+    top: 50%
+    left: 50%
+    max-width: 450px
+    padding: 33px 88px
+    transform: translate(-50%, -50%)
+    background-color: $blue
+    color: $bgc
+    border-radius: 8px
+    z-index: 101
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    &_visible
+      visibility: visible
+      opacity: 1
+      max-height: 100%
+      overflow-y: auto
+  &__title
+    margin: 0 0 15px 0
+    font-weight: 700
+    font-size: 18px
+    line-height: 23px
+    text-transform: uppercase
+    text-align: center
+  &__form
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    textarea
+      min-height: 123px
+      resize: none
+      &::placeholder
+        font-size: 12px
+        line-height: 15px
+        color: $bgc
+  &__close
+    position: absolute
+    top: 17px
+    right: 18px
+    text-decoration: none
+    cursor: pointer
+  &__input
+    width: 100%
+    margin-top: 15px
+    height: 56px
+    background: #FFFFFF
+    color: $text
+    border: 1px solid #C3CAD9
+    border-radius: 8px
+    padding: 17px 15px
+    outline: none
+    &::placeholder
+      font-weight: 400
+      font-size: 14px
+      line-height: 22px
+      color: #959EAD
+    &:first-child
+      margin-top: 0
+  &__button
+    min-width: 160px
+    max-width: 188px
+    min-height: 50px
+    margin-top: 15px
+    padding: 0 18px 0 17px
+    border: none
+    border-radius: 4px
+    border: 3px solid $bgc
+    background-color: $text
+    font-weight: 600
+    font-size: 14px
+    line-height: 15px
+    color: $bgc
+    outline: none
+    cursor: pointer
+    &:hover
+      background-color: $blue
+  &__info
+    font-weight: 400
+    font-size: 12px
+    line-height: 15px
+    color: #E0E0E0
+    text-align: right

@@ -88,21 +88,78 @@ $(document).ready(function () {
 //-----
 
 // для валидации
-// $(".form").each(function () {
-$(".form").validate({
-  errorClass: "invalid",
-  rules: {
-    email: {
-      required: true,
-      email: true,
+$(".form").each(function () {
+  $(this).validate({
+    errorClass: "invalid",
+    rules: {
+      name: {
+        required: true,
+        minlength: 3,
+      },
+      email: {
+        required: true,
+        email: true,
+      },
     },
-  },
-  messages: {
-    email: {
-      email: "Введите корректный email адрес",
-      required: "Введите email в виде name@mail.com",
+    messages: {
+      name: {
+        required: "Введите ваше имя",
+        minlength: "Имя не должно быть короче 3 символов",
+      },
+      email: {
+        email: "Введите корректный email адрес",
+        required: "Введите email в виде name@mail.com",
+      },
     },
-  },
+  });
 });
-// });
 //-----
+
+// для модального окна
+$(document).ready(function () {
+  var modalButton = $("[data-toggle=modal]");
+  console.log(modalButton);
+
+  var closeModalButton = $(".modal__close");
+  console.log(closeModalButton);
+  modalButton.on("click", openModal);
+  closeModalButton.on("click", closeModal);
+  var body = $("body");
+
+  function openModal() {
+    console.log("yes");
+    body.addClass("body_fix");
+    // var targetModal = $(this).attr("data-href");
+    // $(targetModal).find(".modal__overlay").addClass("modal__overlay_visible");
+    // $(targetModal).find(".modal__dialog").addClass("modal__dialog_visible");
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    modalOverlay.addClass("modal__overlay_visible");
+    modalDialog.addClass("modal__dialog_visible");
+  }
+  function closeModal(event) {
+    body.removeClass("body_fix");
+    event.preventDefault();
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    modalOverlay.removeClass("modal__overlay_visible");
+    modalDialog.removeClass("modal__dialog_visible");
+  }
+  $(document).keyup(function (e) {
+    if (e.key === "Escape" || e.keyCode === 27) {
+      //console.log("Нажата клавиша Escape");
+      closeModal(event);
+    }
+  });
+
+  var modalOverlay = document.querySelector(".modal__overlay");
+  modalOverlay.addEventListener("click", function () {
+    var modalCl = document.querySelector(".modal__dialog");
+    var bodyCl = document.querySelector(".body_fix");
+    //.classList.remove("modal__overlay_visible");
+    modalCl.classList.remove("modal__dialog_visible");
+    this.classList.remove("modal__overlay_visible");
+    bodyCl.classList.remove("body_fix");
+  });
+  //-----
+});

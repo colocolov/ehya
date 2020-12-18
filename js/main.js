@@ -11,10 +11,6 @@ menuButton.addEventListener("click", function () {
 // фильтр трендов
 let articles = document.querySelectorAll(".trends__good");
 // console.log(articles);
-// let filter = document.querySelector(".trends__tabs");
-// console.log(filter);
-// console.log(type);
-
 function doAction(value) {
   let types = document.querySelectorAll(".trends__type");
   for (let type of types) {
@@ -28,14 +24,12 @@ function doAction(value) {
     if (value !== "all") {
       console.log(value);
       // console.log(article.dataset.category);
-
       //цикл if
       if (article.dataset.category !== value && article.dataset.category !== "more") {
         article.classList.add("trends__hide");
       } else {
         article.classList.remove("trends__hide");
-      }
-      //цикл if
+      } //цикл if
     } else {
       article.classList.remove("trends__hide");
     }
@@ -47,16 +41,16 @@ function doAction(value) {
 var reviewsSlider = new Swiper(".reviews-slider", {
   loop: true,
   // autoplay
-  // autoplay: {
-  //   delay: 7000,
-  // },
+  autoplay: {
+    delay: 7000,
+  },
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
     type: "bullets",
     clickable: true,
   },
-
+  // отключение прокрутки при наведении мыши
   on: {
     init() {
       this.el.addEventListener("mouseenter", () => {
@@ -75,20 +69,20 @@ var reviewsSlider = new Swiper(".reviews-slider", {
 var storiesSlider = new Swiper(".stories__slider", {
   loop: false,
   navigation: {
-    nextEl: ".stories-btn__left",
-    prevEl: ".stories-btn__right",
-    disabledClass: "stories-btn__unactive",
+    nextEl: ".stories-button__left",
+    prevEl: ".stories-button__right",
+    disabledClass: "stories-button__unactive",
   },
 });
 
 $(document).ready(function () {
   $(".stories-btn__left").click(function () {
-    $(".stories-btn__left").addClass("stories-btn__left--active");
-    $(".stories-btn__right").removeClass("stories-btn__right--active");
+    $(".stories-button__left").addClass("stories-button__left--active");
+    $(".stories-button__right").removeClass("stories-button__right--active");
   });
-  $(".stories-btn__right").click(function () {
-    $(".stories-btn__right").addClass("stories-btn__right--active");
-    $(".stories-btn__left").removeClass("stories-btn__left--active");
+  $(".stories-button__right").click(function () {
+    $(".stories-button__right").addClass("stories-button__right--active");
+    $(".stories-button__left").removeClass("stories-button__left--active");
   });
 });
 //-----

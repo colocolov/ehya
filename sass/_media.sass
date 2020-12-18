@@ -129,6 +129,22 @@
       margin-bottom: 56px
     &__heading, &__text
       text-align: center
+  .footer
+    &__nav
+      flex-wrap: wrap
+      justify-content: left
+      width: 386px
+    &__info
+      width: 253px
+    &__desc
+      font-size: 16px
+      line-height: 28px
+    &__list
+      margin-right: 28px
+      margin-bottom: 48px
+      &:nth-child(2)
+        margin-right: 0
+
 // ---------------------------------- 768 и меньше
 @media ( max-width: 768px )
   .container
@@ -317,6 +333,14 @@
       background-position-y: -310px, 338px
     &__wrapper
       padding: 72px 0 80px 0
+  .footer
+    &__wrapper
+      padding-top: 64px
+      padding-left: 25px
+    &__info
+      margin-right: 30px
+    &__list
+      margin-bottom: 24px
 
 // ---------------------------------- 740 и меньше
 @media ( max-width: 740px )
@@ -329,7 +353,14 @@
     &__post
       margin-right: 0
       margin-bottom: 24px
-
+  .footer
+    &__wrapper
+      padding-bottom: 68px
+      justify-content: space-between
+    &__nav
+      width: 50%
+    &__list
+      margin-right: 0
 // ---------------------------------- 640 и меньше
 @media ( max-width: 640px )
   .collection
@@ -454,6 +485,32 @@
     &__button
       position: static
       height: 48px
+  .footer
+    &__wrapper
+      flex-direction: column
+      padding-top: 50px
+      padding-left: 0
+    &__list
+      margin-bottom: 17px
+      margin-right: 30px
+    &__title
+      margin-bottom: 18px
+    &__item
+      margin-bottom: 15px
+    &__info
+      order: 2
+      width: 100%
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-right: 0
+    &__desc
+      width: 85%
+      text-align: center
+    &__nav
+      padding-left: 18px
+      width: 100%
+      flex-basis: 100%
 
   // ---------------------------------- 480 и меньше
 @media ( max-width: 480px )
@@ -658,3 +715,21 @@
     &__input
       height: 48px
       padding-right: 50px
+  .footer
+    &__list
+      width: 100%
+      margin-right: 0
+    &__title
+      font-size: 16px
+      line-height: 22px
+    &__item
+      font-size: 14px
+      line-height: 20px
+    &__nav
+      margin-bottom: 33px
+    &__desc
+      margin-bottom: 20px
+      font-size: 14px
+      line-height: 24px
+    &__logo
+      margin-bottom: 11px

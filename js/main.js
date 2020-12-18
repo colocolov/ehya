@@ -67,7 +67,7 @@ var reviewsSlider = new Swiper(".reviews-slider", {
 
 // слайдер для записей
 var storiesSlider = new Swiper(".stories__slider", {
-  loop: false,
+  loop: true,
   navigation: {
     nextEl: ".stories-button__left",
     prevEl: ".stories-button__right",
@@ -100,7 +100,7 @@ $(".form").validate({
   messages: {
     email: {
       email: "Введите корректный email адрес",
-      required: "Пожалуйста введите email в виде name@mail.com",
+      required: "Введите email в виде name@mail.com",
     },
   },
 });

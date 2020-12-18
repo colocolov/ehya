@@ -48,10 +48,7 @@
     color: $text
     border: 1px solid #C3CAD9
     border-radius: 8px
-    padding-top: 17px
-    padding-bottom: 17px
-    padding-right: 190px
-    padding-left: 48px
+    padding: 17px 190px 17px 48px
     background-image: url(../images/icons/letter.svg)
     background-repeat: no-repeat
     background-position: 20px center
@@ -66,12 +63,14 @@
     top: 4px
     right: 4px
     height: 47px
-    background: #183B56
+    background: $text
     border-radius: 4px
     padding: 10px 26px
     font-weight: 700
     font-size: 18px
     line-height: 25px
     text-align: center
-    color: #FFFFFF
+    color: $bgc
     cursor: pointer
+    &:hover
+      background: $blue

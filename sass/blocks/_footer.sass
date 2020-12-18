@@ -12,7 +12,7 @@
     width: 90px
     margin-bottom: 25px
   &__desc
-    margin-bottom: 28px
+    margin-bottom: 30px
     font-size: 16px
     line-height: 28px
     color: $description
@@ -21,8 +21,24 @@
     justify-content: space-between
     align-items: center
     width: 185px
-    img
-      height: 44px
+    &-links
+      width: 42px
+      height: 40px
+      display: flex
+      justify-content: center
+      align-items: center
+      background-color: #EFF1F3
+      border-radius: 50%
+      border: 2px solid transparent
+      // margin-right: 6px
+      cursor: pointer
+      &:hover
+        border: 2px solid $blue
+    &-icon
+      width: 18px
+      height: 18px
+    // img
+    //   height: 44px
   &__nav
     display: flex
     justify-content: space-between
@@ -32,12 +48,13 @@
     &:last-child
       margin-right: 0
   &__title
+    font-family: 'Open Sans', sans-serif
     margin-bottom: 31px
     font-weight: 700
     font-size: 18px
     line-height: 25px
     color: $text
-    letter-spacing: 1.5px
+    // letter-spacing: 1.5px
   &__ul
     width: 165px
     padding: 0
@@ -52,3 +69,6 @@
     text-decoration: none
     color: inherit
     display: inline
+    &:hover
+      transition: 0.2s all
+      color: $blue

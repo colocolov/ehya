@@ -7,8 +7,9 @@
     border-top: 1px solid #E5EAF4
     padding-top: 120px
   &__info
-    // margin-right: 96px
-    // margin-left: -5px
+    width: 392px
+    margin-right: 96px
+    //  margin-left: -5px
   &__hash
     display: inline-block
     margin-bottom: 28px
@@ -27,24 +28,28 @@
     display: flex
     justify-content: space-between
   &__slider
-    width: 662px
+    width: 652px
     // height: max-content
+  // &__slide
+  //   width: 662px !important
   &__articles
     display: flex
     justify-content: space-between
     padding-top: 10px
+    margin-right: 2px
   &__post
     position: relative
     width: 322px
     height: 475px
-    margin-right: 13px
+    margin-right: 8px
     &:last-child
-      margin-right: 0
+      margin-right: 0px
   &__image
     width: 312px
     height: 317px
     border-radius: 8px 8px 0px 0px
     overflow: hidden
+    padding-left: 2px
   &__photo
     width: 100%
     height: 100%
@@ -54,7 +59,7 @@
   &__descrition
     position: absolute
     top: 297px
-    left: 10px
+    left: 12px
     width: 312px
     height: 178px
     padding: 20px 32px 20px 20px
@@ -88,14 +93,13 @@
         background-position: center
         transition: 0.5s all
   &-button
-    border: 2px solid #183B56
-    fill: #183B56
-  &-button__unactive
     border: 2px solid #959EAD
     fill: #959EAD
-    display: none
+    &:hover
+      border: 2px solid #183B56
+      fill: #183B56
   &-button__left, &-button__right
-    width: 54px
+    width: 56px
     height: 56px
     display: flex
     justify-content: center

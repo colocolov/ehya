@@ -29,7 +29,7 @@
     <header class="navbar navbar__mobile_fixed">
       <div class="container">
         <div class="navbar__top">
-          <a href="index.html" class="logo">
+          <a href="#" class="logo">
             <img src="images/logo.svg" alt="Logo: Ehya" class="navbar__logo" />
           </a>
           <!-- /.logo -->
@@ -41,7 +41,7 @@
               <li class="navbar__item"><a href="#" class="link navbar__link">Отзывы</a></li>
               <li class="navbar__item"><a href="#" class="link navbar__link">Контакты</a></li>
             </ul>
-            <button class="button navbar__login">Войти</button>
+            <button data-toggle="modal" class="button navbar__login">Войти</button>
           </nav>
           <!-- /.navbar__menu -->
           <button class="menu-button navbar__menu-button">
@@ -59,7 +59,7 @@
       <div class="container">
         <div class="subscribe__wrapper subscribe__wrapper_thx">
           <div class="subscribe__info subscribe__info_thx">
-            <h3 lang="en" class="heading subscribe__heading">Спасибо за подписку!</h3>
+            <h3 lang="en" class="heading subscribe__heading">Спасибо!</h3>
             <a href="index.html" class="text subscribe__text_thx">Вернуться на Главную</a>
           </div>
         </div>
@@ -72,7 +72,7 @@
         <div class="footer__wrapper">
           <div class="footer__info">
             <div class="footer__logo">
-              <a href="index.html"><img src="images/logo.svg" alt="Logo: ehya" class="footer__image" /></a>
+              <a href="#"><img src="images/logo.svg" alt="Logo: ehya" class="footer__image" /></a>
             </div>
             <div class="footer__desc">Интернет-магазин брендовой одежды с оплатой онлайн</div>
             <div class="footer__social">
@@ -136,6 +136,27 @@
     </footer>
     <!-- /.footer -->
 
+    <div class="modal" id="login-modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="images/icons/close.svg" alt="Icon: close" />
+        </a>
+        <h3 class="modal__title">Авторизация</h3>
+        <form action="send.php" method="POST" class="modal__form form">
+          <input type="text" name="name" class="input modal__input" placeholder="Ваше имя*" required />
+          <input type="email" name="email" class="input modal__input" placeholder="Email*" required />
+          <button class="button modal__button" type="submit">Войти</button>
+          <span class="modal__info">* обязательно</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

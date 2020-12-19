@@ -2,8 +2,8 @@
 let menuButton = document.querySelector(".menu-button");
 menuButton.addEventListener("click", function () {
   document.querySelector(".navbar__menu").classList.toggle("navbar__menu_visible");
-  console.log("body");
-  document.body.classList.toggle("body_fix");
+  // console.log("body");
+  document.body.classList.remove("body_fix");
   menuButton.classList.toggle("menu-button_active");
 });
 //-----
@@ -118,16 +118,16 @@ $(".form").each(function () {
 // для модального окна
 $(document).ready(function () {
   var modalButton = $("[data-toggle=modal]");
-  console.log(modalButton);
+  // console.log(modalButton);
 
   var closeModalButton = $(".modal__close");
-  console.log(closeModalButton);
+  // console.log(closeModalButton);
   modalButton.on("click", openModal);
   closeModalButton.on("click", closeModal);
   var body = $("body");
 
   function openModal() {
-    console.log("yes");
+    // console.log("yes");
     body.addClass("body_fix");
     // var targetModal = $(this).attr("data-href");
     // $(targetModal).find(".modal__overlay").addClass("modal__overlay_visible");

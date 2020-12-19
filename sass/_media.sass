@@ -168,6 +168,19 @@
       &:hover
         transition: none
         color: $text
+  .modal
+    &__dialog
+      padding: 33px 70px
+    &__button
+      order: 2
+      width: 100%
+      &:hover
+        background-color: $text
+        color: $bgc
+    &__info
+      flex-basis: 100%
+      margin-top: 15px
+      text-align: left
 // ---------------------------------- 768 и меньше
 @media ( max-width: 768px )
   .container
@@ -192,6 +205,7 @@
       top: 10px
       padding-top: 10px
       border: 1px solid #f1f1f1
+      overflow: hidden
       &_visible
         display: flex
         flex-direction: column
@@ -369,6 +383,12 @@
       margin-right: 30px
     &__list
       margin-bottom: 24px
+  .modal
+    &__dialog
+      width: 60%
+      padding: 33px 50px
+    &__button
+      min-width: auto
 
 // ---------------------------------- 740 и меньше
 @media ( max-width: 740px )
@@ -459,6 +479,10 @@
       &__text
         padding-left: 0px
         padding-right: 0px
+  .modal
+    &__dialog
+      width: 65%
+      padding: 33px
 
   // ---------------------------------- 576 и меньше
 @media ( max-width: 576px )
@@ -746,6 +770,8 @@
       height: 48px
       padding-right: 50px
   .footer
+    &__wrapper
+      padding-bottom: 83px
     &__list
       width: 100%
       margin-right: 0
@@ -763,3 +789,7 @@
       line-height: 24px
     &__logo
       margin-bottom: 11px
+  .modal
+    &__dialog
+      width: 87%
+      padding: 25px

@@ -104,6 +104,7 @@
       flex-direction: column
       margin-bottom: 55px
     &__heading
+      text-align: center
       margin-bottom: 25px
     &__photos
       grid-template-columns: repeat(2, 280px)
@@ -146,6 +147,8 @@
       &:hover
         background: $text
   .footer
+    &__wrapper
+      padding-bottom: 35px
     &__nav
       flex-wrap: wrap
       justify-content: left
@@ -539,6 +542,7 @@
       margin-top: 10px
       position: static
       height: 48px
+      width: 100%
   .footer
     &__wrapper
       flex-direction: column
@@ -587,7 +591,7 @@
       flex-direction: column
       align-items: center
     &__hash
-      width: 194px
+      // width: 194px
       height: 24px
       margin-bottom: 25px
       text-align: center
@@ -610,7 +614,7 @@
       margin-bottom: 26px
       font-size: 16px
       line-height: 22px
-      height: 47px
+      min-height: 47px
       padding: 11px 40px
     &__advantages
       justify-content: center

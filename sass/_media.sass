@@ -1,3 +1,7 @@
+@media ( max-width: 1440px )
+  .promo
+    width: 95%
+
 // ---------------------------------- 1200 и меньше
 @media ( max-width: 1200px )
   .container
@@ -113,6 +117,12 @@
       &:hover
         transition: none
         opacity: 1
+    &__type
+      &:hover
+        color: $description
+      &_active
+        &:hover
+          color: $text
     &__name
       a
         &:hover
@@ -178,8 +188,10 @@
       order: 2
       width: 100%
       &:hover
+        transition: none
         background-color: $text
         color: $bgc
+        border: 2px solid transparent
     &__info
       flex-basis: 100%
       margin-top: 15px
@@ -213,7 +225,7 @@
         display: flex
         flex-direction: column
         align-items: start
-        overflow: scroll
+        overflow-y: scroll
         padding: 36px 24px
       &-button
         display: flex
@@ -259,12 +271,14 @@
         span
           &:nth-child(1)
             transform: rotate(-45deg)
-            margin-top: 8px
+            margin-top: 9px
+            height: 1px
           &:nth-child(2)
             display: none
           &:nth-child(3)
             transform: rotate(45deg)
             margin-bottom: 8px
+            height: 1px
   .promo
     width: 94.7%
     background-image: url(../images/promo-bg-768.jpg)
@@ -343,6 +357,10 @@
       &__text
         padding-left: 9px
         padding-right: 9px
+        max-height: 210px
+        // white-space: nowrap
+        overflow-y: scroll
+        // text-overflow: ellipsis
   .swiper
     &-wrapper
       margin-bottom: 46px
@@ -487,6 +505,13 @@
       width: 65%
       padding: 33px
 
+  // ---------------------------------- 640 + горизонтальное и меньше
+@media ( max-width: 640px ) and (orientation : landscape)
+  .modal
+    &__dialog
+      width: 75%
+      padding: 18px 35px
+
   // ---------------------------------- 576 и меньше
 @media ( max-width: 576px )
   .promo
@@ -570,7 +595,7 @@
       width: 100%
       flex-basis: 100%
 
-  // ---------------------------------- 480 и меньше
+// ---------------------------------- 480 и меньше
 @media ( max-width: 480px )
   body
     padding-top: 86px
@@ -616,6 +641,7 @@
       line-height: 22px
       min-height: 47px
       padding: 11px 40px
+      max-width: 95%
     &__advantages
       justify-content: center
       width: 274px
@@ -700,6 +726,7 @@
     &__text
       font-size: 17px
       line-height: 20px
+
   .reviews
     margin-bottom: 53px
     &-slider
@@ -713,6 +740,8 @@
         font-size: 18px
         line-height: 36px
         letter-spacing: 0.12px
+        max-height: 360px
+        overflow-y: scroll
       &__username
         width: 67%
         font-size: 20px

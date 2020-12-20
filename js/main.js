@@ -22,7 +22,7 @@ function doAction(value) {
   }
   for (let article of articles) {
     if (value !== "all") {
-      console.log(value);
+      // console.log(value);
       // console.log(article.dataset.category);
       //цикл if
       if (article.dataset.category !== value && article.dataset.category !== "more") {
@@ -69,9 +69,11 @@ var reviewsSlider = new Swiper(".reviews-slider", {
 var storiesSlider = new Swiper(".stories__slider", {
   loop: true,
   navigation: {
-    nextEl: ".stories-button__left",
-    prevEl: ".stories-button__right",
-    disabledClass: "stories-button__unactive",
+    nextEl: ".stories-button__right",
+    prevEl: ".stories-button__left",
+    // disabledClass: "stories-button__unactive",
+    clickable: true,
+    // для ппрвильного направления
   },
 });
 

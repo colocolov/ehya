@@ -31,13 +31,17 @@
   &__button
     margin-bottom: 57px
     padding: 11px 36px
-    width: 259px
+    max-width: 400px
     min-height: 55px
     font-size: 18px
     line-height: 25px
     border: 2px solid $text
     background: $text
     color: $bgc
+    // переполнение кнопки скрыть
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
     &:hover
       transition: 0.5s all
       color: $text
